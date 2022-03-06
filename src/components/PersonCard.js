@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Button, Col } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 function PersonCard(props) {
@@ -9,11 +9,10 @@ function PersonCard(props) {
         <Card.Img variant="top" src={props.image} className="images" />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
-          <Card.Text>Read more about me.</Card.Text>
         </Card.Body>
         <LinkContainer to={`/person/#${props.id}`}>
           <Button className="btn btn-success mb-2 mx-2" variant="primary">
-            View
+            Discover
           </Button>
         </LinkContainer>
       </Card>

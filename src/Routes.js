@@ -9,7 +9,7 @@ function RouteWrapper() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
-      <Route path="*" element={<PersonInfo />} />
+      <Route path=":id" element={<PersonInfo />} />
     </Routes>
   );
 }
